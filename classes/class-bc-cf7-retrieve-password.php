@@ -53,7 +53,7 @@ if(!class_exists('BC_CF7_Retrieve_Password')){
     	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     	private function is_type($contact_form = null){
-            return bc_cf7()->is_type('retrieve_password', $contact_form);
+            return bc_cf7()->is_type('retrieve-password', $contact_form);
         }
 
     	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
