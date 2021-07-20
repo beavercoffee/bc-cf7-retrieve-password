@@ -68,9 +68,6 @@ if(!class_exists('BC_CF7_Retrieve_Password')){
             add_filter('wpcf7_posted_data', [$this, 'wpcf7_posted_data'], 15);
             add_filter('wpcf7_validate_email*', [$this, 'wpcf7_validate_email'], 11, 2);
             add_filter('wpcf7_validate_text*', [$this, 'wpcf7_validate_text'], 11, 2);
-            if(!has_filter('wpcf7_verify_nonce', 'is_user_logged_in')){
-                add_filter('wpcf7_verify_nonce', 'is_user_logged_in');
-            }
             bc_build_update_checker('https://github.com/beavercoffee/bc-cf7-retrieve-password', $this->file, 'bc-cf7-retrieve-password');
             $this->fields = ['user_email', 'user_login'];
             do_action('bc_cf7_retrieve_password_loaded');
